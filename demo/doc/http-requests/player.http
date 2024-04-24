@@ -1,0 +1,23 @@
+GET http://localhost:8080/players
+###
+GET http://localhost:8080/player/2
+###
+POST http://localhost:8080/player
+Access-Control-Request-Headers:
+Content-Type: application/json
+
+{
+"firstName": "Christo",
+"lastName": "Yovev"
+}
+###
+PUT http://localhost:8080/player/4
+Access-Control-Request-Headers:
+Content-Type: application/json
+
+{
+  "firstName": "Marko",
+  "lastName": "Cunj"
+}
+###
+DELETE http://localhost:8080/player/4

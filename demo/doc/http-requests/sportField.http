@@ -1,0 +1,23 @@
+GET http://localhost:8080/sportFields
+###
+GET http://localhost:8080/sportField/2
+###
+POST http://localhost:8080/sportField
+Access-Control-Request-Headers:
+Content-Type: application/json
+
+{
+  "name": "Maksimir",
+  "location": "Zagreb"
+}
+###
+PUT http://localhost:8080/sportField/3
+Access-Control-Request-Headers:
+Content-Type: application/json
+
+{
+  "name": "Rujevica",
+  "location": "Rijeka"
+}
+###
+DELETE http://localhost:8080/sportField/4
